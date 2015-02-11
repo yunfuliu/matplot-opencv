@@ -1,6 +1,5 @@
 # matplot-opencv
-
-This library offers the data of **OpenCV**'s `cv::Mat` a quick review as showing line, histogram, 1D curve, or 2D curve for algorithm development, **with just simple few lines of code**. Also, this library takes the advantage of the most popular matplotlib as the core of drawing, and enjoys its beautiful displays.  
+This library offers the data of **OpenCV**'s `cv::Mat` a quick review as showing line, histogram, 1D curve, or 2D curve for algorithm development, **with just simple few lines of code**. Also, this library takes the advantage of the most popular **matplotlib** as the core of drawing, and enjoys its beautiful displays.  
 
 System requirements:
 --------------------
@@ -8,6 +7,14 @@ System requirements:
  * OpenCV > 2.0
  * numpy
  * matplotlib
+
+Usage:
+------
+ 1. Install this library with:  
+    `python setup.py install`
+ 2. Involve the resources in `/include` into your project. 
+
+ps. Currently only Visual Studio 2010 with python 3.4 is tested. 
 
 Sample code:
 ------------
