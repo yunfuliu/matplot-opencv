@@ -1,6 +1,8 @@
 # matplot-opencv
 This library offers the data of **OpenCV**'s `cv::Mat` a quick review as showing line, histogram, 1D curve, or 2D curve for algorithm development, **with just simple few lines of code**. Also, this library takes the advantage of the most popular **matplotlib** as the core of drawing, and enjoys its beautiful displays.  
 
+ * Please report bugs to [Issues](https://github.com/yunfuliu/matplot-opencv/issues)
+
 System requirements:
 --------------------
  * Python > 3.0
