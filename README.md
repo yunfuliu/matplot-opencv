@@ -10,7 +10,7 @@ System requirements:
  * numpy
  * matplotlib
 
-Usage:
+Installation:
 ------
  1. Install this library with:  
     `python setup.py install`
@@ -18,7 +18,7 @@ Usage:
 
 ps. Currently only Visual Studio 2010 with python 3.4 is tested. 
 
-Sample code:
+Usage and sample code:
 ------------
 Three functions are shown below:
 
