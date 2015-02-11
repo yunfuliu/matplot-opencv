@@ -1,7 +1,6 @@
 # matplot-opencv
 
-The purpose of this library is to draw line, histogram, and 1D and 2D curve for data analysis. 
-Also, this library take the advantage of the most popular matplotlib as the core functionality of drawing.  
+This library offers the data of **OpenCV**'s `cv::Mat` a quick review as showing line, histogram, 1D curve, or 2D curve for algorithm development, **with just simple few lines of code**. Also, this library takes the advantage of the most popular matplotlib as the core of drawing, and enjoys its beautiful displays.  
 
 System requirements:
 --------------------
@@ -12,7 +11,7 @@ System requirements:
 
 Sample code:
 ------------
-Sample codes of three functions are shown below:
+Three functions are shown below:
 
 
  * Draw a 2D filter
