@@ -1,7 +1,58 @@
 # matplot-opencv
 
-Requirements of the following functions are listed below.
- *	1. Platform: Only x86 is available.
- *	2. Python is needed to be installed previously.
- *	2.1.	Required modules: numpy, matplotlib
- *	3. Allow only "Release" mode, "Debug" mode will return true and do nothing. 
+The purpose of this library is to draw line, histogram, and 1D and 2D curve for data analysis. 
+Also, this library take the advantage of the most popular matplotlib as the core functionality of drawing.  
+
+System requirements:
+--------------------
+ * Python > 3.0
+ * OpenCV > 2.0
+ * numpy
+ * matplotlib
+
+Sample code:
+------------
+Sample codes of three functions are shown below:
+
+
+ * Draw a histogram
+~~~.cpp
+#include <opencv2/imgproc/imgproc.hpp>
+#include <matplot-opencv.hpp>
+using namespace cv;
+namespace plt = matplotcv;
+void main(){
+    Mat	seq	=	(Mat_<float>(1,4)<<1,2,3,2);
+    plt::hist(seq,3);
+}
+~~~
+Result: ![plot_surface example](./examples/plot_surface.png)
+
+
+ * Draw a 2D filter
+~~~.cpp
+#include <opencv2/imgproc/imgproc.hpp>
+#include <matplot-opencv.hpp>
+using namespace cv;
+namespace plt = matplotcv;
+void main(){
+ 	  Mat	mat	=	(Mat_<float>(3,3)<<1,2,1,2,4,2,1,2,1);
+ 	  plt::plot_surface(mat);
+}
+~~~
+Result: ![hist example](./examples/hist.png)
+
+
+ * Draw a 1D curve
+~~~.cpp
+#include <opencv2/imgproc/imgproc.hpp>
+#include <matplot-opencv.hpp>
+using namespace cv;
+namespace plt = matplotcv;
+void main(){
+	  Mat	seq	=	(Mat_<float>(1,4)<<1,4,2,5);
+	  plt::curve(seq);
+}
+~~~
+Result: ![curve example](./examples/curve.png)
+
