@@ -15,20 +15,6 @@ Sample code:
 Sample codes of three functions are shown below:
 
 
- * Draw a histogram
-~~~.cpp
-#include <opencv2/imgproc/imgproc.hpp>
-#include <matplot-opencv.hpp>
-using namespace cv;
-namespace plt = matplotcv;
-void main(){
-    Mat	seq	=	(Mat_<float>(1,4)<<1,2,3,2);
-    plt::hist(seq,3);
-}
-~~~
-Result: ![plot_surface example](./examples/plot_surface.png)
-
-
  * Draw a 2D filter
 ~~~.cpp
 #include <opencv2/imgproc/imgproc.hpp>
@@ -36,11 +22,25 @@ Result: ![plot_surface example](./examples/plot_surface.png)
 using namespace cv;
 namespace plt = matplotcv;
 void main(){
- 	  Mat	mat	=	(Mat_<float>(3,3)<<1,2,1,2,4,2,1,2,1);
- 	  plt::plot_surface(mat);
+    Mat	mat = (Mat_<float>(3,3)<<1,2,1,2,4,2,1,2,1);
+    plt::plot_surface(mat);
 }
 ~~~
-Result: ![hist example](./examples/hist.png)
+Result: ![plot_surface example](./example/plot_surface.png)
+
+
+ * Draw a histogram
+~~~.cpp
+#include <opencv2/imgproc/imgproc.hpp>
+#include <matplot-opencv.hpp>
+using namespace cv;
+namespace plt = matplotcv;
+void main(){
+    Mat seq = (Mat_<float>(1,4)<<1,2,3,2);
+    plt::hist(seq,3);
+}
+~~~
+Result: ![hist example](./example/hist.png)
 
 
  * Draw a 1D curve
@@ -50,9 +50,9 @@ Result: ![hist example](./examples/hist.png)
 using namespace cv;
 namespace plt = matplotcv;
 void main(){
-	  Mat	seq	=	(Mat_<float>(1,4)<<1,4,2,5);
-	  plt::curve(seq);
+    Mat seq = (Mat_<float>(1,4)<<1,4,2,5);
+    plt::curve(seq);
 }
 ~~~
-Result: ![curve example](./examples/curve.png)
+Result: ![curve example](./example/curve.png)
 
